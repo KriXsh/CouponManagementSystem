@@ -51,8 +51,13 @@ The Coupon Management System is a service designed for e-commerce platforms to m
 3. **Environment Setup**:
    - Create a `.env` file and configure the following:
      ```
-     DB_URI=<your_mongodb_connection_string>
-     PORT=3000
+     NODE_ENV = "development"
+     PORT = ""
+     TOKEN = ""
+     VERSIONS = "v1,v2"
+     MONGO_DB = "Coupons"
+     MONGO_DB_WRITER = "mongodb+srv://cluster0"
+     MONGO_DB_READER = "mongodb+srv://Cluster0"
      ```
 
 4. **Run the Application**:
@@ -69,7 +74,7 @@ The Coupon Management System is a service designed for e-commerce platforms to m
 ├── models/           # Request payload validation schemas
 ├── routes/           # API route definitions
 ├── services/         # Business logic for each API
-├── app.js            # Entry point for the application
+├── index.js            # Entry point for the application
 └── README.md         # Documentation
 ```
 
